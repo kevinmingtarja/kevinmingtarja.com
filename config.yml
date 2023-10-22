@@ -8,9 +8,9 @@ buildDrafts: false
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  title: ExampleSite
-  description: Kevin Mingtarja's Home on the Internet
-  keywords: [Blog, Portfolio, PaperMod]
+  title: Kevin Mingtarja
+  description: My Home on the Internet
+  keywords: [Blog, Portfolio]
   author: Kevin Mingtarja
   # images: ["<link or path of image for opengraph, twitter-cards>"]
   DateFormat: "January 2, 2006"
@@ -32,14 +32,14 @@ params:
   #   showtoc: false
   #   tocopen: false
 
-  #   assets:
-  #     # disableHLJS: true # to disable highlight.js
-  #     # disableFingerprinting: true
-  #     favicon: "<link / abs url>"
-  #     favicon16x16: "<link / abs url>"
-  #     favicon32x32: "<link / abs url>"
-  #     apple_touch_icon: "<link / abs url>"
-  #     safari_pinned_tab: "<link / abs url>"
+  assets:
+    # disableHLJS: true # to disable highlight.js
+    # disableFingerprinting: true
+    favicon: "/favicon.ico"
+    favicon16x16: "/favicon.ico"
+    favicon32x32: "/favicon.ico"
+    # apple_touch_icon: "<link / abs url>"
+    # safari_pinned_tab: "<link / abs url>"
 
   #   label:
   #     text: "Home"
@@ -64,7 +64,18 @@ params:
   # home-info mode
   homeInfoParams:
     Title: "Hi there \U0001F44B"
-    Content: Welcome to my blog
+    Content: |
+      I'm Kevin, a computer science undergrad at the National University of Singapore.
+      I have a particular interest towards data infrastrucuture, networking, distributed systems, as well as infrastructure and ops. 
+      And in this blog, I write about my exploration, learnings, and thoughts on these topics.
+      &nbsp; 
+
+      &nbsp; 
+
+      I spent the past year in the Bay Area with [Dgraph Labs](https://dgraph.io/), a distributed graph database startup.
+      At Dgraph, I worked on [Dgraph Cloud](https://cloud.dgraph.io), our managed database-as-a-service offering, 
+      where I handle almost everything starting from the infrastructure, backend, ops, all the way to frontend.
+      Along the way, I've also been exposed to the core database itself, which peaked my interest further in databases and distributed systems, particularly on storage engines and query processing.
   socialIcons:
     - name: github
       url: "https://github.com/kevinmingtarja"
@@ -81,11 +92,6 @@ params:
 #       SiteVerificationTag: "XYZabc"
 #     yandex:
 #       SiteVerificationTag: "XYZabc"
-
-#   cover:
-#     hidden: true # hide everywhere but not in structured data
-#     hiddenInList: true # hide on list pages and home
-#     hiddenInSingle: true # hide on single page
 
 #   editPost:
 #     URL: "https://github.com/<path_to_repo>/content"
@@ -131,3 +137,9 @@ outputs:
   home:
     - HTML
     - JSON
+
+deployment:
+  targets:
+    - name: "s3"
+      URL: "s3://prod-kevinmingtarja-com?region=us-east-1"
+      cloudFrontDistributionID: "E11SQTXFGM2CXB"
