@@ -5,7 +5,7 @@ draft: false
 tags: ["dns", "networking"]
 ---
 
-Despite how simple and cheap it is to offload your DNS records to something like AWS [Route 53](https://aws.amazon.com/route53/), I chose to run my own DNS servers. Why you may ask? Just for fun really, and learning. There are plenty of reasons for and against running your own DNS servers, and I'm not trying to convince you that you should, I just want to share my experiences. So let's jump into it.
+Despite how simple and cheap it is to offload your DNS records to something like AWS [Route 53](https://aws.amazon.com/route53/), I chose to run my own DNS servers. Why you may ask? Just for fun really, and learning. There are plenty of reasons for and against running your own DNS servers, and I'm not trying to convince you that you should, I just wanted to share my experiences. So let's jump into it.
 
 ## what is an authoritative DNS server?
 
