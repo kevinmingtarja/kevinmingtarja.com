@@ -73,7 +73,7 @@ params:
       &nbsp; 
 
       Currently, I’m working on [Hypermode](https://hypermode.com/), a platform that helps developers build AI into their applications.
-      And on my free time, I contribute to open source projects related to databases and cloud infrastructure such as ClickHouse, CockroachDB, KServe, and a few others.
+      And on my free time, I contribute to open source projects related to databases and cloud infrastructure such as [ClickHouse](https://github.com/ClickHouse/ClickHouse/commits?author=kevinmingtarja), [CockroachDB](https://github.com/cockroachdb/cockroach/commits?author=kevinmingtarja), [KServe](https://github.com/kserve/kserve/commits?author=kevinmingtarja), and a few others.
   socialIcons:
     - name: github
       url: "https://github.com/kevinmingtarja"
