@@ -72,10 +72,8 @@ params:
 
       &nbsp; 
 
-      I spent the past year in the Bay Area with [Dgraph Labs](https://dgraph.io/), a distributed graph database startup.
-      At Dgraph, I worked on [Dgraph Cloud](https://cloud.dgraph.io), our managed database-as-a-service offering, 
-      where I handle almost everything starting from the infrastructure, backend, ops, all the way to frontend.
-      Along the way, I've also been exposed to the core database itself, which peaked my interest further in databases and distributed systems, particularly on storage engines and query processing.
+      Currently, I’m working on [Hypermode](https://hypermode.com/), a platform that helps developers build AI into their applications.
+      And on my free time, I contribute to open source projects related to databases and cloud infrastructure such as ClickHouse, CockroachDB, KServe, and a few others.
   socialIcons:
     - name: github
       url: "https://github.com/kevinmingtarja"
